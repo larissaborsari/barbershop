@@ -4,6 +4,7 @@
  */
 package View;
 
+import Model.Client;
 import Model.Service;
 
 /**
@@ -19,6 +20,8 @@ public class Main {
         
         System.out.println(service2.getDescription());        
         System.out.println(service2.getValue());
+        
+        
 
     }
 }
