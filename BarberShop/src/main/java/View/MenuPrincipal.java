@@ -33,6 +33,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         OperationMenu = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,6 +58,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         OperationMenu.setText("Operation");
         OperationMenu.setToolTipText("");
         jMenuBar1.add(OperationMenu);
+
+        jMenu1.setText("Reports");
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -118,6 +122,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu OperationMenu;
     private javax.swing.JMenu RegisterMenu;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
