@@ -4,8 +4,6 @@
  */
 package Model;
 
-import java.util.Date;
-
 /**
  *
  * @author Larissa Borsari
@@ -15,7 +13,7 @@ public class Client extends Person{
     private String address;
     private String zipcode;
 
-    public Client(String address, String zipcode, int id, String name, char gender, Date birthDate, String phone, String email, String idnumber) {
+    public Client(String address, String zipcode, int id, String name, char gender, String birthDate, String phone, String email, String idnumber) {
         super(id, name, gender, birthDate, phone, email, idnumber);
         this.address = address;
         this.zipcode = zipcode;

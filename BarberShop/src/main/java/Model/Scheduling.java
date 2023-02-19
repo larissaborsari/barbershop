@@ -4,7 +4,11 @@
  */
 package Model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -18,12 +22,18 @@ public class Scheduling {
     private Date date;
     private String notes;
 
-    public Scheduling(int id, Client client, Service service, float value, Date date) {
+    public Scheduling(int id, Client client, Service service, float value, String date) {
         this.id = id;
         this.client = client;
         this.service = service;
         this.value = value;
-        this.date = date;
+        try 
+        {
+            this.date = new SimpleDateFormat("dd/MM/yyyy HH:mm").parse(date);
+        }
+        catch (ParseException ex){
+            Logger.getLogger(Scheduling.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     public int getId() {

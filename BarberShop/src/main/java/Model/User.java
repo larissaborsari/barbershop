@@ -4,8 +4,6 @@
  */
 package Model;
 
-import java.util.Date;
-
 /**
  *
  * @author Larissa Borsari
@@ -15,7 +13,7 @@ public class User extends Person{
     private String password;    
     private String accessLevel;
 
-    public User(String password, String accessLevel, int id, String name, char gender, Date birthDate, String phone, String email, String idnumber) {
+    public User(String password, String accessLevel, int id, String name, char gender, String birthDate, String phone, String email, String idnumber) {
         super(id, name, gender, birthDate, phone, email, idnumber);
         this.password = password;
         this.accessLevel = accessLevel;
