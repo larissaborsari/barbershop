@@ -1,12 +1,13 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package View;
 
 /**
  *
- * @author Larissa Borsari
+ * @author tiago
  */
 public class Login extends javax.swing.JFrame {
 
@@ -26,59 +27,78 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LoginPanel = new javax.swing.JPanel();
-        LoginLabel = new javax.swing.JLabel();
-        UserLabel = new javax.swing.JLabel();
-        PasswordLabel = new javax.swing.JLabel();
-        UserInput = new javax.swing.JTextField();
-        PasswordInput = new javax.swing.JPasswordField();
-        BackgroundImage = new javax.swing.JLabel();
+        LabelTituloLogin = new javax.swing.JLabel();
+        LabelUsuario = new javax.swing.JLabel();
+        TextUsuario = new javax.swing.JTextField();
+        LabelSenha = new javax.swing.JLabel();
+        TextSenha = new javax.swing.JPasswordField();
+        ButtonEntrar = new javax.swing.JButton();
+        LabelPainelFundo = new javax.swing.JLabel();
+        LabelLoginFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 102, 102));
-        setMinimumSize(new java.awt.Dimension(600, 800));
-        setPreferredSize(new java.awt.Dimension(600, 800));
-        setSize(new java.awt.Dimension(600, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        LoginPanel.setBackground(new java.awt.Color(204, 204, 255));
-        LoginPanel.setPreferredSize(new java.awt.Dimension(250, 250));
-        LoginPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        LabelTituloLogin.setFont(new java.awt.Font("Courier 10 Pitch", 1, 48)); // NOI18N
+        LabelTituloLogin.setForeground(new java.awt.Color(255, 255, 255));
+        LabelTituloLogin.setText("Login");
+        getContentPane().add(LabelTituloLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
 
-        LoginLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        LoginLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LoginLabel.setText("Login");
-        LoginPanel.add(LoginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 250, -1));
+        LabelUsuario.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+        LabelUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        LabelUsuario.setText("Usuario");
+        getContentPane().add(LabelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, -1, -1));
 
-        UserLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        UserLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        UserLabel.setText("User");
-        LoginPanel.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 69, 250, -1));
-
-        PasswordLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        PasswordLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PasswordLabel.setText("Password");
-        LoginPanel.add(PasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 147, 250, -1));
-        LoginPanel.add(UserInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 107, 189, -1));
-
-        PasswordInput.addActionListener(new java.awt.event.ActionListener() {
+        TextUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PasswordInputActionPerformed(evt);
+                TextUsuarioActionPerformed(evt);
             }
         });
-        LoginPanel.add(PasswordInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 181, 185, -1));
+        getContentPane().add(TextUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 400, 40));
 
-        getContentPane().add(LoginPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, -1));
+        LabelSenha.setFont(new java.awt.Font("DejaVu Sans", 1, 18)); // NOI18N
+        LabelSenha.setForeground(new java.awt.Color(255, 255, 255));
+        LabelSenha.setText("Senha");
+        getContentPane().add(LabelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, -1, -1));
 
-        BackgroundImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Downloads\\Imagem do WhatsApp de 2023-01-30 à(s) 15.51.54.jpg")); // NOI18N
-        getContentPane().add(BackgroundImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -10, 770, 1050));
+        TextSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextSenhaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TextSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 400, 40));
+
+        ButtonEntrar.setBackground(new java.awt.Color(164, 152, 152));
+        ButtonEntrar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        ButtonEntrar.setText("Entrar");
+        ButtonEntrar.setActionCommand("ButtonEntrar");
+        ButtonEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonEntrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, 400, 50));
+
+        LabelPainelFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\painel-login.png")); // NOI18N
+        getContentPane().add(LabelPainelFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 590, 520));
+
+        LabelLoginFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\Logo.jpg")); // NOI18N
+        getContentPane().add(LabelLoginFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1018));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void PasswordInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordInputActionPerformed
+    private void TextUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PasswordInputActionPerformed
+    }//GEN-LAST:event_TextUsuarioActionPerformed
+
+    private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEntrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonEntrarActionPerformed
+
+    private void TextSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextSenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,12 +136,13 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BackgroundImage;
-    private javax.swing.JLabel LoginLabel;
-    private javax.swing.JPanel LoginPanel;
-    private javax.swing.JPasswordField PasswordInput;
-    private javax.swing.JLabel PasswordLabel;
-    private javax.swing.JTextField UserInput;
-    private javax.swing.JLabel UserLabel;
+    private javax.swing.JButton ButtonEntrar;
+    private javax.swing.JLabel LabelLoginFundo;
+    private javax.swing.JLabel LabelPainelFundo;
+    private javax.swing.JLabel LabelSenha;
+    private javax.swing.JLabel LabelTituloLogin;
+    private javax.swing.JLabel LabelUsuario;
+    private javax.swing.JPasswordField TextSenha;
+    private javax.swing.JTextField TextUsuario;
     // End of variables declaration//GEN-END:variables
 }

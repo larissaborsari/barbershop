@@ -1,12 +1,13 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package View;
 
 /**
  *
- * @author Larissa Borsari
+ * @author tiago
  */
 public class Agenda extends javax.swing.JFrame {
 
@@ -26,122 +27,147 @@ public class Agenda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        IdInput = new javax.swing.JTextField();
-        ClientLabel = new javax.swing.JLabel();
-        PriceInput = new javax.swing.JTextField();
-        DateInput = new javax.swing.JTextField();
-        TimeInput = new javax.swing.JTextField();
-        IdLabel = new javax.swing.JLabel();
-        ServiceLabel = new javax.swing.JLabel();
-        PriceLabel = new javax.swing.JLabel();
-        TimeLabel = new javax.swing.JLabel();
-        DateLabel = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
+        LabelAgenda = new javax.swing.JLabel();
+        LabelId = new javax.swing.JLabel();
+        LabelCliente = new javax.swing.JLabel();
+        LabelServico = new javax.swing.JLabel();
+        LabelValor = new javax.swing.JLabel();
+        LabelData = new javax.swing.JLabel();
+        LabelHora = new javax.swing.JLabel();
+        LabelObservacao = new javax.swing.JLabel();
+        TextId = new javax.swing.JTextField();
+        TextCliente = new javax.swing.JComboBox<>();
+        TextServico = new javax.swing.JComboBox<>();
+        TextValor = new javax.swing.JTextField();
+        TextFormatedData = new javax.swing.JFormattedTextField();
+        TextFormatedHora = new javax.swing.JFormattedTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        TextObservacao = new javax.swing.JTextArea();
+        ButtonAgendar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TableAgendamentos = new javax.swing.JTable();
+        LabelAgendaPainelFundo = new javax.swing.JLabel();
+        LabelAgendaFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(1201, 936));
-        setPreferredSize(new java.awt.Dimension(1201, 936));
-        setSize(new java.awt.Dimension(1201, 936));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(185, 160, 105));
+        LabelAgenda.setFont(new java.awt.Font("Liberation Sans", 1, 36)); // NOI18N
+        LabelAgenda.setForeground(new java.awt.Color(255, 255, 255));
+        LabelAgenda.setText("Agenda");
+        getContentPane().add(LabelAgenda, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 130, 150, 60));
 
-        ClientLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        ClientLabel.setText("Client:");
+        LabelId.setForeground(new java.awt.Color(255, 255, 255));
+        LabelId.setText("Id");
+        getContentPane().add(LabelId, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
-        IdLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        IdLabel.setText("Id: ");
+        LabelCliente.setForeground(new java.awt.Color(255, 255, 255));
+        LabelCliente.setText("Cliente");
+        getContentPane().add(LabelCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, -1, -1));
 
-        ServiceLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        ServiceLabel.setText("Service:");
+        LabelServico.setForeground(new java.awt.Color(255, 255, 255));
+        LabelServico.setText("Servico");
+        getContentPane().add(LabelServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 360, -1, -1));
 
-        PriceLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        PriceLabel.setText("Price R$:");
+        LabelValor.setForeground(new java.awt.Color(255, 255, 255));
+        LabelValor.setText("Valor R$");
+        getContentPane().add(LabelValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 420, -1, -1));
 
-        TimeLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        TimeLabel.setText("Time:");
+        LabelData.setForeground(new java.awt.Color(255, 255, 255));
+        LabelData.setText("Data");
+        getContentPane().add(LabelData, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 480, -1, -1));
 
-        DateLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        DateLabel.setText("Date:");
+        LabelHora.setForeground(new java.awt.Color(255, 255, 255));
+        LabelHora.setText("Hora");
+        getContentPane().add(LabelHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 540, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        LabelObservacao.setForeground(new java.awt.Color(255, 255, 255));
+        LabelObservacao.setText("Observação");
+        getContentPane().add(LabelObservacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 240, -1, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        TextId.setEditable(false);
+        TextId.setText("0");
+        TextId.setToolTipText("");
+        TextId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextIdActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TextId, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 280, 40));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(ClientLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(TimeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TimeInput, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(DateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(DateInput, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(PriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(PriceInput, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(ServiceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(IdLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(IdInput, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(585, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(IdInput, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(IdLabel))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ClientLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ServiceLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PriceInput, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PriceLabel))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(DateLabel)
-                    .addComponent(DateInput, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TimeInput, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TimeLabel))
-                .addContainerGap(460, Short.MAX_VALUE))
-        );
+        TextCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Alan", "Afonso", "Abigail", "Alexandro" }));
+        getContentPane().add(TextCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 280, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 990, 800));
+        TextServico.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Barba", "Barba + Corte", "Corte", " " }));
+        getContentPane().add(TextServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 280, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\AgendaFundo.png")); // NOI18N
-        jLabel2.setToolTipText("");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, -60, 1420, 1012));
+        TextValor.setText("0");
+        TextValor.setToolTipText("");
+        TextValor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextValorActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TextValor, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 280, 40));
+
+        TextFormatedData.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter()));
+        getContentPane().add(TextFormatedData, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, 280, 40));
+
+        TextFormatedHora.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getTimeInstance(java.text.DateFormat.SHORT))));
+        getContentPane().add(TextFormatedHora, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 530, 280, 40));
+
+        TextObservacao.setColumns(20);
+        TextObservacao.setRows(5);
+        jScrollPane2.setViewportView(TextObservacao);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 230, 610, 280));
+
+        ButtonAgendar.setBackground(new java.awt.Color(60, 233, 106));
+        ButtonAgendar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        ButtonAgendar.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonAgendar.setText("Agendar");
+        ButtonAgendar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonAgendarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ButtonAgendar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 520, 610, 50));
+
+        TableAgendamentos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"1", "Alan", "Corte", "10", "22/04/2018", "08:00", ""},
+                {"2", "Abigail", "Barba", "20", "22/04/2018", "09:00", "Pode se Atrazar um pouco"},
+                {"3", "Pedro", "Barba", "20", "23/04/2018", "08:00", null},
+                {"4", "Teste", "Barba + Corte", "30", "23/04/2018", "09:00", null}
+            },
+            new String [] {
+                "Id", "Cliente", "Serviço", "Valor", "Data", "Hora", "Observação"
+            }
+        ));
+        jScrollPane1.setViewportView(TableAgendamentos);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 590, 1120, 330));
+
+        LabelAgendaPainelFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\Agenda-PainelFundo.png")); // NOI18N
+        getContentPane().add(LabelAgendaPainelFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 1000));
+
+        LabelAgendaFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\AgendaFundo.png")); // NOI18N
+        getContentPane().add(LabelAgendaFundo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1300, 1000));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TextIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextIdActionPerformed
+
+    private void ButtonAgendarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonAgendarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonAgendarActionPerformed
+
+    private void TextValorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextValorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextValorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -179,19 +205,26 @@ public class Agenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ClientLabel;
-    private javax.swing.JTextField DateInput;
-    private javax.swing.JLabel DateLabel;
-    private javax.swing.JTextField IdInput;
-    private javax.swing.JLabel IdLabel;
-    private javax.swing.JTextField PriceInput;
-    private javax.swing.JLabel PriceLabel;
-    private javax.swing.JLabel ServiceLabel;
-    private javax.swing.JTextField TimeInput;
-    private javax.swing.JLabel TimeLabel;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton ButtonAgendar;
+    private javax.swing.JLabel LabelAgenda;
+    private javax.swing.JLabel LabelAgendaFundo;
+    private javax.swing.JLabel LabelAgendaPainelFundo;
+    private javax.swing.JLabel LabelCliente;
+    private javax.swing.JLabel LabelData;
+    private javax.swing.JLabel LabelHora;
+    private javax.swing.JLabel LabelId;
+    private javax.swing.JLabel LabelObservacao;
+    private javax.swing.JLabel LabelServico;
+    private javax.swing.JLabel LabelValor;
+    private javax.swing.JTable TableAgendamentos;
+    private javax.swing.JComboBox<String> TextCliente;
+    private javax.swing.JFormattedTextField TextFormatedData;
+    private javax.swing.JFormattedTextField TextFormatedHora;
+    private javax.swing.JTextField TextId;
+    private javax.swing.JTextArea TextObservacao;
+    private javax.swing.JComboBox<String> TextServico;
+    private javax.swing.JTextField TextValor;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }
