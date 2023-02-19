@@ -26,60 +26,59 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        LoginPanel = new javax.swing.JPanel();
+        LoginLabel = new javax.swing.JLabel();
+        UserLabel = new javax.swing.JLabel();
+        PasswordLabel = new javax.swing.JLabel();
+        UserInput = new javax.swing.JTextField();
+        PasswordInput = new javax.swing.JPasswordField();
+        BackgroundImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 102, 102));
+        setMinimumSize(new java.awt.Dimension(600, 800));
+        setPreferredSize(new java.awt.Dimension(600, 800));
+        setSize(new java.awt.Dimension(600, 800));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        LoginPanel.setBackground(new java.awt.Color(204, 204, 255));
+        LoginPanel.setPreferredSize(new java.awt.Dimension(250, 250));
+        LoginPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LoginLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        LoginLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LoginLabel.setText("Login");
+        LoginPanel.add(LoginLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 250, -1));
+
+        UserLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        UserLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        UserLabel.setText("User");
+        LoginPanel.add(UserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 69, 250, -1));
+
+        PasswordLabel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        PasswordLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PasswordLabel.setText("Password");
+        LoginPanel.add(PasswordLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 147, 250, -1));
+        LoginPanel.add(UserInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 107, 189, -1));
+
+        PasswordInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                PasswordInputActionPerformed(evt);
             }
         });
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 650, 410, 50));
+        LoginPanel.add(PasswordInput, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 181, 185, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        getContentPane().add(LoginPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 520, -1, -1));
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 410, 50));
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Password");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 580, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("User");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, -1, -1));
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Login");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\painel-login.png")); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 290, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Documents\\projeto_barber_shop\\BarberShop_Material\\BarberShop Material\\View\\imagens\\Logo.jpg")); // NOI18N
-        jLabel1.setText("jLabel1");
-        jLabel1.setPreferredSize(new java.awt.Dimension(700, 100));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 812, 1146));
+        BackgroundImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Larissa Borsari\\Downloads\\Imagem do WhatsApp de 2023-01-30 à(s) 15.51.54.jpg")); // NOI18N
+        getContentPane().add(BackgroundImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, -10, 770, 1050));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void PasswordInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordInputActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_PasswordInputActionPerformed
 
     /**
      * @param args the command line arguments
@@ -117,13 +116,12 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel BackgroundImage;
+    private javax.swing.JLabel LoginLabel;
+    private javax.swing.JPanel LoginPanel;
+    private javax.swing.JPasswordField PasswordInput;
+    private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JTextField UserInput;
+    private javax.swing.JLabel UserLabel;
     // End of variables declaration//GEN-END:variables
 }
