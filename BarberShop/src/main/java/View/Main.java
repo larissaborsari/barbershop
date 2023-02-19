@@ -6,6 +6,7 @@ package View;
 
 import Model.Client;
 import Model.Service;
+import Model.User;
 
 /**
  *
@@ -21,7 +22,13 @@ public class Main {
         System.out.println(service2.getDescription());        
         System.out.println(service2.getValue());
         
+        Client client1 = new Client("Rua Endereço", "8888888", 2, "Fulano");
+        System.out.println(client1);
         
+        User user1 = new User("password", "admin", 3, "admin3");
+        System.out.println(user1);
+                
 
+        
     }
 }
