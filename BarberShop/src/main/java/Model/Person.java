@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author Larissa Borsari
  */
-public class Person {
+abstract public class Person {
     protected int id;
     protected String name;
     protected char gender;
