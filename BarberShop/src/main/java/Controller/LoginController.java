@@ -35,6 +35,7 @@ public class LoginController {
             if(authUser != null){
                 MenuPrincipal menu = new MenuPrincipal();
                 menu.setVisible(true);
+                this.view.dispose();
             }else{
                 view.showMessage("Invalid user or password");
             }
