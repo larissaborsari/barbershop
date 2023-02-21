@@ -4,6 +4,7 @@
  */
 package Controller;
 
+import Model.User;
 import View.Login;
 
 /**
@@ -16,6 +17,18 @@ public class LoginController {
     
     public LoginController(Login view){
         this.view = view;  
+    }
+    
+    public void logInSystem(){
+        //get an user from view
+        String name = view.getTextUsuario().getText();
+        String password = view. getTextSenha().getText();
+        
+        User model = new User(password, 0, name);
+        
+        //find user in databse
+            //if found: redirect to menu
+            //else: show error message
     }
     
     public void doTask(){
