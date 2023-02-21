@@ -15,20 +15,6 @@ import Model.User;
 public class Main {
     public static void main(String[] args){
         String name = "Udo";
-        System.out.println(name);
-        
-        Service service2 = new Service(2,"barba completa", 30);
-        
-        System.out.println(service2.getDescription());        
-        System.out.println(service2.getValue());
-        
-        Client client1 = new Client("Rua Endereço", "8888888", 2, "Fulano");
-        System.out.println(client1);
-        
-        User user1 = new User("password", "admin", 3, "admin3");
-        System.out.println(user1);
-                
-
-        
+                   
     }
 }
