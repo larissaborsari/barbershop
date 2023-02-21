@@ -12,8 +12,8 @@ public class Client extends Person{
     
     private String address;
     private String zipcode;
-
-    public Client(String address, String zipcode, int id, String name, char gender, String birthDate, String phone, String email, String idnumber) {
+    
+    public Client(int id, String name, char gender, String birthDate, String phone,String email, String idnumber, String address, String zipcode) {
         super(id, name, gender, birthDate, phone, email, idnumber);
         this.address = address;
         this.zipcode = zipcode;

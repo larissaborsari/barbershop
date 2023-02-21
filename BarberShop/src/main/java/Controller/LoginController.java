@@ -27,6 +27,7 @@ public class LoginController {
         User user = helper.getModel();
         
         //find user in databse
+        
             //if found: redirect to menu
             //else: show error message
     }
