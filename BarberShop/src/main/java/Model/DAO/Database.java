@@ -40,22 +40,22 @@ public class Database {
         Client client3 = new Client(3, "Paulo Ricado", 'M', "24/04/1997", "30212128", "pauloricardopet@gmail.com", "78451458", "Rua Tres Irmaos 30 Vila Nova - NH",  "933007496");
         Client client4 = new Client(4, "Neymar Santos", 'M', "20/08/1995", "30212130", "neymarsantospet@gmail.com", "2745487", "Rua Lombardi 40 Canudos NH",  "93300748");
         Client client5 = new Client(5, "Debruine Pipoqueiro", 'M', "13/09/1992", "30212131", "debruinepet@gmail.com", "4742487", "Rua pedro quaresma 784 Canudos Belgica",  "933000847");
-        Client client6 = new Client(6, "Matuidi Pareira", 'M', "17/08/1994", "302122324", "matuidipet@gmail.com", "78512457", "Rua champions 10 Kephas Franca",  "933000782");
+        Client client6 = new Client(6, "John Doe", 'M', "17/08/1994", "302122324", "johndoe@gmail.com", "78512457", "Rua champions 10 Kephas Franca",  "933000782");
         Client client7 = new Client(7, "Marta de Souza", 'F', "25/03/1993", "302121292", "martasouzapet@gmail.com", "4658237314", "Rua tesla 215 Canudos NH",  "93352012");
         Client client8 = new Client(8, "Aline Ferrari", 'F', "04/03/1990", "302121451", "alineferraripet@gmail.com", "8475123687", "Rua hyrule 32 Canudos NH",  "9334714747");
         Client client9 = new Client(9, "Samuel Coltinho", 'M', "09/02/1998", "302121189", "samuelcoltinhopet@gmail.com", "74595142487", "Rua floresta 12 Canudos NH",  "9330046364");
         Client client10 = new Client(10, "Felipe Luis", 'M', "12/06/1999", "3021212478", "felipeluispet@gmail.com", "845713647", "Rua marechal 1023 Canudos NH",  "933000874");
         
         Service service1 = new Service(1, "Corte Simples", 18);
-        Service service2 = new Service(2, "Corte Degrade", 30);
+        Service service2 = new Service(2, "Corte Degradê", 30);
         Service service3 = new Service(3, "Barba Simples", 15);
         Service service4 = new Service(4, "Barba Desenhada", 25);
-        Service service5 = new Service(5, "Sombrancelhas", 10);
+        Service service5 = new Service(5, "Sobrancelhas", 10);
         Service service6 = new Service(6, "Penteados", 3);
 
-        Scheduling scheduling1 = new Scheduling(1, client1, service2, 30, "14/07/2018 09:30");
-        Scheduling scheduling2 = new Scheduling(2, client3, service4, 40, "14/07/2018 10:00");
-        Scheduling scheduling3 = new Scheduling(3, client4, service1, 18, "14/07/2018 10:30");
+        Scheduling scheduling1 = new Scheduling(1, client1, service2, 30, "14/03/2023 09:30");
+        Scheduling scheduling2 = new Scheduling(2, client3, service4, 40, "14/03/2023 10:00");
+        Scheduling scheduling3 = new Scheduling(3, client4, service1, 18, "14/03/2023 10:30");
         
         //Adiciona Elementos na lista
         user.add(user1);
