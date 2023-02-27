@@ -8,7 +8,9 @@ import Controller.Helper.AgendaHelper;
 import Model.Client;
 import Model.DAO.ClientDAO;
 import Model.DAO.SchedulingDAO;
+import Model.DAO.ServiceDAO;
 import Model.Scheduling;
+import Model.Service;
 import View.Agenda;
 import java.util.ArrayList;
 
@@ -40,5 +42,13 @@ public class AgendaController {
         ArrayList<Client> clients = clientDAO.selectAll();
         // shoow clients in combobox
         helper.fillClients(clients);
+    }
+    
+     public void updateService() {
+        //get services from database
+        ServiceDAO serviceDAO = new ServiceDAO();
+        ArrayList<Service> services = serviceDAO.selectAll();
+        // shoow services in combobox
+        helper.fillServices(services);
     }
 }

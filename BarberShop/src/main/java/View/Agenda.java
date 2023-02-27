@@ -235,6 +235,7 @@ public class Agenda extends javax.swing.JFrame {
     private void init() {
         this.controller.updateTable();
         this.controller.updateClient();
+        this.controller.updateService();
     }
 
     public JTable getTableAgendamentos() {

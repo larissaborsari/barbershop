@@ -6,6 +6,7 @@ package Controller.Helper;
 
 import Model.Client;
 import Model.Scheduling;
+import Model.Service;
 import View.Agenda;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
@@ -51,4 +52,11 @@ public class AgendaHelper {
         }
     }
 
+    public void fillServices(ArrayList<Service> services) {
+        DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getTextServico().getModel();
+        
+        for (Service service : services) {
+            comboBoxModel.addElement(service);
+        }
+    }
 }
