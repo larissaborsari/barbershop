@@ -41,6 +41,8 @@ public class Client extends Person{
         this.zipcode = zipcode;
     }
     
-    
-    
+    @Override
+    public String toString(){
+        return getName();
+    }
 }

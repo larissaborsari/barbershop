@@ -4,9 +4,11 @@
  */
 package Controller.Helper;
 
+import Model.Client;
 import Model.Scheduling;
 import View.Agenda;
 import java.util.ArrayList;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -38,6 +40,14 @@ public class AgendaHelper {
                     scheduling.getNotes()
                         
         });
+        }
+    }
+
+    public void fillClients(ArrayList<Client> clients) {
+        DefaultComboBoxModel comboBoxModel = (DefaultComboBoxModel) view.getTextCliente().getModel();
+        
+        for (Client client : clients) {
+            comboBoxModel.addElement(client);
         }
     }
 

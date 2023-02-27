@@ -5,6 +5,8 @@
 package Controller;
 
 import Controller.Helper.AgendaHelper;
+import Model.Client;
+import Model.DAO.ClientDAO;
 import Model.DAO.SchedulingDAO;
 import Model.Scheduling;
 import View.Agenda;
@@ -30,6 +32,13 @@ public class AgendaController {
         
         //show list in view
         helper.fillTable(schedulings);
-        
+    }
+    
+    public void updateClient() {
+        //get clients from database
+        ClientDAO clientDAO = new ClientDAO();
+        ArrayList<Client> clients = clientDAO.selectAll();
+        // shoow clients in combobox
+        helper.fillClients(clients);
     }
 }
