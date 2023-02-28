@@ -51,4 +51,9 @@ public class AgendaController {
         // shoow services in combobox
         helper.fillServices(services);
     }
+     
+    public void updatePrice() {
+        Service service = helper.obtainService();
+        helper.setPrice(service.getValue());
+    }
 }

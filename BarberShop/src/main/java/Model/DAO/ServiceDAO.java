@@ -36,8 +36,7 @@ public class ServiceDAO {
                 return true;
             }
         }
-        return false;      
-
+        return false;
     }
     
     /**

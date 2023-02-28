@@ -59,4 +59,12 @@ public class AgendaHelper {
             comboBoxModel.addElement(service);
         }
     }
+
+    public Service obtainService() {
+       return (Service) view.getTextServico().getSelectedItem();
+    }
+
+    public void setPrice(float value) {
+       view.getTextValor().setText(value+"");
+    }
 }
