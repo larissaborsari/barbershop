@@ -35,16 +35,16 @@ public class Database {
         User user1 = new User(1, "barbeiro", 'M', "09/05/1996", "30212121", "barbeiro@barbershop.com", "521454123", "barbeiro", "administrador");
         User user2 = new User(2, "estagiario", 'M', "09/05/1996", "30212122", "estagiario@barbershop.com", "451244123", "estagiario", "funcionario");
          
-        Client client1 = new Client(1, "Alan Figueiredo", 'M', "30/01/1995", "30212126", "tiagoluz.h607@gmail.com", "5142487", "Rua jaboti 35 Canudos NH",  "93300012");
-        Client client2 = new Client(2, "Judite Oliveira", 'F', "30/08/1994", "30212127", "juditeoliveirapet@gmail.com", "5142487745", "Rua campo bom 78 Centro NH",  "93300045");
-        Client client3 = new Client(3, "Paulo Ricado", 'M', "24/04/1997", "30212128", "pauloricardopet@gmail.com", "78451458", "Rua Tres Irmaos 30 Vila Nova - NH",  "933007496");
-        Client client4 = new Client(4, "Neymar Santos", 'M', "20/08/1995", "30212130", "neymarsantospet@gmail.com", "2745487", "Rua Lombardi 40 Canudos NH",  "93300748");
-        Client client5 = new Client(5, "Debruine Pipoqueiro", 'M', "13/09/1992", "30212131", "debruinepet@gmail.com", "4742487", "Rua pedro quaresma 784 Canudos Belgica",  "933000847");
-        Client client6 = new Client(6, "John Doe", 'M', "17/08/1994", "302122324", "johndoe@gmail.com", "78512457", "Rua champions 10 Kephas Franca",  "933000782");
-        Client client7 = new Client(7, "Marta de Souza", 'F', "25/03/1993", "302121292", "martasouzapet@gmail.com", "4658237314", "Rua tesla 215 Canudos NH",  "93352012");
-        Client client8 = new Client(8, "Aline Ferrari", 'F', "04/03/1990", "302121451", "alineferraripet@gmail.com", "8475123687", "Rua hyrule 32 Canudos NH",  "9334714747");
-        Client client9 = new Client(9, "Samuel Coltinho", 'M', "09/02/1998", "302121189", "samuelcoltinhopet@gmail.com", "74595142487", "Rua floresta 12 Canudos NH",  "9330046364");
-        Client client10 = new Client(10, "Felipe Luis", 'M', "12/06/1999", "3021212478", "felipeluispet@gmail.com", "845713647", "Rua marechal 1023 Canudos NH",  "933000874");
+        Client client1 = new Client(1, "Alan Figueiredo", 'M', "30/01/1995", "30212126", "email@gmail.com", "5142e87", "Rua jaboti 35 Canudos NH",  "93300e12");
+        Client client2 = new Client(2, "Ana Oliveira", 'F', "30/08/1994", "30212127", "email@gmail.com", "5142e87745", "Rua campo bom 78 Centro NH",  "933000e5");
+        Client client3 = new Client(3, "Paulo Ricado", 'M', "24/04/1997", "30212128", "email@gmail.com", "784e458", "Rua Tres Irmaos 30 Vila Nova - NH",  "93300e496");
+        Client client4 = new Client(4, "Marcos Santos", 'M', "20/08/1995", "30212130", "email@gmail.com", "274e487", "Rua Lombardi 40 Canudos NH",  "933e0748");
+        Client client5 = new Client(5, "Débora Silva", 'M', "13/09/1992", "30212131", "email@gmail.com", "4742e87", "Rua pedro quaresma 784 Canudos Belgica",  "93e00847");
+        Client client6 = new Client(6, "John Doe", 'M', "17/08/1994", "302122324", "johndoe@gmail.com", "7851e57", "Rua champions 10 Kephas Franca",  "933e00782");
+        Client client7 = new Client(7, "Marta de Souza", 'F', "25/03/1993", "302121292", "email@gmail.com", "465e37314", "Rua tesla 215 Canudos NH",  "9335e12");
+        Client client8 = new Client(8, "Aline Ferrari", 'F', "04/03/1990", "302121451", "email@gmail.com", "847e23687", "Rua hyrule 32 Canudos NH",  "93347147e7");
+        Client client9 = new Client(9, "Samuel Coltinho", 'M', "09/02/1998", "302121189", "email@gmail.com", "7459e42487", "Rua floresta 12 Canudos NH",  "9e0046364");
+        Client client10 = new Client(10, "Felipe Luis", 'M', "12/06/1999", "3021212478", "email@gmail.com", "8457e647", "Rua marechal 1023 Canudos NH",  "93300e874");
         
         Service service1 = new Service(1, "Corte Simples", 18);
         Service service2 = new Service(2, "Corte Degradê", 30);

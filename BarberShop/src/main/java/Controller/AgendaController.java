@@ -59,7 +59,11 @@ public class AgendaController {
     
     public void scheduleNew() {
         //get scheduling object form screen
-        
+        Scheduling scheduling = helper.obtainModel();
         //save object in db
+        new SchedulingDAO().insert(scheduling);
+        //update table
+        updateTable();
+        helper.clearScreen();
     }
 }

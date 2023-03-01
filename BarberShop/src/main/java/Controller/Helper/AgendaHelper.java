@@ -82,15 +82,18 @@ public class AgendaHelper implements IHelper{
         float price = Float.parseFloat(valueString);
         String date = view.getTextFormatedData().getText();
         String time = view.getTextFormatedHora().getText();
-        String dateTime = date + " " + time;
+        String dateTime = date+" "+time;
         String notes = view.getTextObservacao().getText();
-        return new Scheduling(id, client, service, price, dateTime, notes);
+        Scheduling scheduling = new Scheduling(id, client, service, price, dateTime, notes);
+        return scheduling;
     }
 
     @Override
     public void clearScreen() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        view.getTextId().setText("0");
+        view.getTextFormatedData().setText("");
+        view.getTextFormatedHora().setText("");
+        view.getTextObservacao().setText("");
     }
-    
-    
+
 }
