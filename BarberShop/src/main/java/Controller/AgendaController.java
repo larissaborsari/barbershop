@@ -56,4 +56,10 @@ public class AgendaController {
         Service service = helper.obtainService();
         helper.setPrice(service.getValue());
     }
+    
+    public void scheduleNew() {
+        //get scheduling object form screen
+        
+        //save object in db
+    }
 }

@@ -11,7 +11,7 @@ import View.Login;
  *
  * @author Larissa Borsari
  */
-public class LoginHelper {
+public class LoginHelper implements IHelper {
     private final Login view;
 
     public LoginHelper(Login view) {
@@ -37,5 +37,10 @@ public class LoginHelper {
     public void clearScreen(){
         view.getTextUsuario().setText("");
         view.getTextSenha().setText("");
+    }
+
+    @Override
+    public Object obtainModel() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

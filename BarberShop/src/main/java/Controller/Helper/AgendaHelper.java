@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Larissa Borsari
  */
-public class AgendaHelper {
+public class AgendaHelper implements IHelper{
     
     private final Agenda view;
 
@@ -60,6 +60,10 @@ public class AgendaHelper {
         }
     }
 
+    public Client obtainClient() {
+       return (Client) view.getTextCliente().getSelectedItem();
+    }
+    
     public Service obtainService() {
        return (Service) view.getTextServico().getSelectedItem();
     }
@@ -67,4 +71,26 @@ public class AgendaHelper {
     public void setPrice(float value) {
        view.getTextValor().setText(value+"");
     }
+
+    @Override
+    public Scheduling obtainModel() {
+        String idString = view.getTextId().getText();
+        int id = Integer.parseInt(idString);
+        Client client = obtainClient();
+        Service service = obtainService();
+        String valueString = view.getTextValor().getText();
+        float price = Float.parseFloat(valueString);
+        String date = view.getTextFormatedData().getText();
+        String time = view.getTextFormatedHora().getText();
+        String dateTime = date + " " + time;
+        String notes = view.getTextObservacao().getText();
+        return new Scheduling(id, client, service, price, dateTime, notes);
+    }
+
+    @Override
+    public void clearScreen() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
 }

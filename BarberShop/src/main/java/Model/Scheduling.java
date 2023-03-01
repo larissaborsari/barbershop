@@ -36,6 +36,13 @@ public class Scheduling {
         }
     }
 
+    public Scheduling(int id, Client client, Service service, float value, String date, String notes) {
+        this(id, client, service, value, date);
+        this.notes = notes;
+    }
+    
+    
+
     public int getId() {
         return id;
     }
